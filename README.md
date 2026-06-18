@@ -4,8 +4,32 @@
 
 > **v2** — this is the Azure-native rewrite of the project. Same ten phases, same flow, same logic. The only thing that changed is the cloud underneath.
 
-## Table of Contents
+Architecture Diagram
 
+**Developer
+    │
+Bitbucket
+    │
+Azure DevOps Pipeline
+    │
+SonarQube + Trivy
+    │
+Docker Build
+    │
+ACR
+    │
+ArgoCD
+    │
+AKS
+    │
+Prometheus/Grafana
+    │
+ELK
+    │
+Teams Alerts**
+
+## Table of Contents
+- [Architecture Diagram](#Architecture Diagram).
 - [Phase 1: Development](#phase-1-development)
 - [Phase 2: CI Pipeline](#phase-2-ci-pipeline)
 - [Phase 3: GitOps](#phase-3-gitops)
@@ -59,7 +83,7 @@ Azure DevOps Pipeline
 
 Pipeline stages:
 
-**Stage 1 — Code Quality Check**
+**Stage 1 — Code Quality Check (optional)**
 
 ```
 SonarQube
@@ -72,7 +96,7 @@ Checks:
 - Code smells
 - Duplications
 
-**Stage 2 — Security Scan**
+**Stage 2 — Security Scan(optional)**
 
 ```
 Trivy
