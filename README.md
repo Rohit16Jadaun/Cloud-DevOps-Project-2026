@@ -1,6 +1,8 @@
-# 🚀 The Complete Django DevOps Pipeline — Azure Edition
+# 🚀 The Complete Django DevOps Pipeline — Azure Edition (v2)
 
 *From a single commit to a self-healing, auto-scaling, fully observable production system — running entirely on Azure.*
+
+> **v2** — this is the Azure-native rewrite of the project. Same ten phases, same flow, same logic. The only thing that changed is the cloud underneath.
 
 ## Table of Contents
 
@@ -27,7 +29,7 @@ Developer writes Django code.
 ```
 Developer
     ↓
-Bitbucket/Github/Gitlab
+Bitbucket
 ```
 
 Repository contains:
@@ -370,7 +372,7 @@ That's the full loop: one `git push` triggers quality gates, security scans, and
 
 ---
 
-**## 🛠️ Build & Run This Yourself**
+## 🛠️ Build & Run This Yourself
 
 The phases above are the big picture. This is the part that actually gets a Django app running on Azure Kubernetes Service, with your own domain and HTTPS — start to finish, no skipped steps. End to end it takes 45–60 minutes, mostly spent waiting on cloud resources to provision.
 
