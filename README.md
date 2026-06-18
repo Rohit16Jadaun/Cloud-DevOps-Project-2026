@@ -130,6 +130,22 @@ docker push acr.azurecr.io/django-app:v1
 
 ### Phase 3: GitOps
 
+GitOps Explanation
+
+Many beginners won't understand:
+
+Why Azure DevOps and ArgoCD both exist?
+
+Add a section:
+
+Azure DevOps = Continuous Integration
+
+ArgoCD = Continuous Deployment
+
+Azure DevOps builds the image.
+
+ArgoCD deploys the image.
+
 Instead of:
 
 ```
