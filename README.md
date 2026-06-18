@@ -29,7 +29,7 @@ ELK
 Teams Alerts**
 
 ## Table of Contents
-- [Architecture Diagram](#Architecture Diagram).
+
 - [Phase 1: Development](#phase-1-development)
 - [Phase 2: CI Pipeline](#phase-2-ci-pipeline)
 - [Phase 3: GitOps](#phase-3-gitops)
