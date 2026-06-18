@@ -3,9 +3,14 @@ kind: Ingress
 metadata:
   name: django-app-ingress
   annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+        - app.yourdomain.com
+      secretName: djprod-tls
   rules:
     - host: app.yourdomain.com
       http:
