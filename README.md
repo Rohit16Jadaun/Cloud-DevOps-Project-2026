@@ -26,7 +26,7 @@ The developer writes Django code.
 ```
 Developer
     ↓
-Bitbucket
+Bitbucket/Github/Gitlab
 ```
 
 Repository contains:
