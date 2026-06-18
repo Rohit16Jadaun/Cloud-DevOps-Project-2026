@@ -54,7 +54,7 @@ django-prometheus==2.2.0
 psycopg2-binary==2.9.9
 requests
 Pillow
-boto3
+azure-storage-blob
 django-storages
 EOF
 fi
@@ -88,7 +88,7 @@ if ! grep -q "^def first(" "${VIEWS_FILE}" 2>/dev/null; then
 from django.http import HttpResponse
 
 def first(request):
-    return HttpResponse("Hello from DevToProd! 🚀")
+    return HttpResponse("Hello from DjProd! 🚀")
 EOF
 else
   echo "==> 'first' view already present; skipping."
